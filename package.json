@@ -1,0 +1,31 @@
+{
+  "name": "tattoostudio",
+  "version": "1.0.0",
+  "description": "Estudio de tatuagem",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node ./src/script.js",
+    "dev": "nodemon ./src/script.js",
+    "populate": "node ./src/infra/create-and-populate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cardosovanessa/tattoostudio.git"
+  },
+  "author": "Vanessa Cardoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cardosovanessa/tattoostudio/issues"
+  },
+  "homepage": "https://github.com/cardosovanessa/tattoostudio#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "supertest": "^6.1.4"
+  }
+}
