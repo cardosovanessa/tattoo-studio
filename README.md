@@ -11,21 +11,21 @@
 ## Sobre
 
 Criação de API utilizando os verbos HTTP seguindo o padrão REST e contendo todas as operações de CRUD.
-#
+
 ## Tecnologias 🚀
 * Nodemon
 * Jest
 * Supertest
-#
+
 ## Bibliotecas
-#
+
 ## Instalação
 
 Você precisará ter o [NodeJS](https://nodejs.org) instalado na sua máquina, e, após isso, clonar este repositório:
 ```sh
   $ git clone https://github.com/cardosovanessa/tattoo-studio.git
 ```
-#
+
 ## Executando a aplicação
 
 Para executá-la é muito simples, basta rodar os seguintes comandos:
