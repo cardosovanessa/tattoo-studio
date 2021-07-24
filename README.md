@@ -6,7 +6,7 @@
   </p>
 </h4>
 
-# Resilia - Projeto 4° Módulo - API Rest
+## Resilia - Projeto 4° Módulo - API Rest
 
 ## Sobre
 
