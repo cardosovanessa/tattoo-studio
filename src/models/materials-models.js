@@ -5,7 +5,7 @@ class Materials {
     this.agulhas = agulhas;
     this.tintas = tintas;
     this.luvas = luvas;
-    this.toalhasPapel = toalhasPapel;
+    this.toalhasPapel = toalhasPapel
   }
 }
 module.exports = Materials
