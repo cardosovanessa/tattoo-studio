@@ -12,7 +12,7 @@
 
 Criação de API utilizando os verbos HTTP seguindo o padrão REST e contendo todas as operações de CRUD.
 #
-## 🚀 Tecnologias
+## Tecnologias 🚀
 * Nodemon
 * Jest
 * Supertest
