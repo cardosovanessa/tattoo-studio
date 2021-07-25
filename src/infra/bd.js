@@ -1,4 +1,3 @@
-module.exports = db = {
-  users: [],
-  tasks: []
+module.exports = bd = {
+  materials: [],
 }

@@ -1,11 +1,9 @@
 class Materials {
-  constructor(esterilizador, máquina, agulhas, tintas, luvas, toalhasPapel) {
-    this.estilizador = esterilizador;
-    this.máquina = máquina;
-    this.agulhas = agulhas;
-    this.tintas = tintas;
-    this.luvas = luvas;
-    this.toalhasPapel = toalhasPapel
+  constructor(nome, marca, precoEntrada, quantidade) {
+    this.nome = nome;
+    this.marca = marca;
+    this.precoEntrada = precoEntrada;
+    this.quantidade = quantidade;
   }
 }
-module.exports = Materials
+module.exports = Materials;
