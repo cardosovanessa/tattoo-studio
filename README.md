@@ -1,21 +1,26 @@
 <h4 align="center">
     <br><br>
     <p align="center">
-      <a href="#-about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <a href="#-technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   </p>
 </h4>
 
-# Resilia - Projeto 4° Módulo - API Rest
+# Studio Tattoo - API Rest
 ## Sobre
 
 Criação de API utilizando os verbos HTTP seguindo o padrão REST e contendo todas as operações de CRUD.
-## 🚀 Tecnologias
-* Nodemon
-* Jest
-* Supertest
+## Biblioteca
+* [Nodemon](https://nodemon.io/)
+* [Jest](https://jestjs.io/)
+* [Supertest](https://github.com/visionmedia/supertest#readme)
 
-## Bibliotecas
+### Framework
+* [Express](https://expressjs.com/pt-br/)
+### Banco de dados
+* [SQLite3](https://www.npmjs.com/package/sqlite3)
+
 ## Instalação
 
 Você precisará ter o [NodeJS](https://nodejs.org) instalado na sua máquina, e, após isso, clonar este repositório:
@@ -26,5 +31,6 @@ Você precisará ter o [NodeJS](https://nodejs.org) instalado na sua máquina, e
 
 Para executá-la é muito simples, basta rodar os seguintes comandos:
 ```sh
-  $ npm init -y # inicializando o package.json
-  $ npm install serve -D # instalando o serve como dependência de desenvolvimento
+  $ npm install # instalando os pacotes
+  $ npm 
+  $

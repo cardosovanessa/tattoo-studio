@@ -2,12 +2,11 @@
   "name": "tattoostudio",
   "version": "1.0.0",
   "description": "Estudio de tatuagem",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "jest",
     "start": "node ./src/server.js",
-    "dev": "nodemon ./src/server.js",
-    "populate": "node ./src/infra/create-and-populate.js"
+    "dev": "nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +26,7 @@
   },
   "devDependencies": {
     "jest": "^27.0.6",
-    "supertest": "^6.1.4"
+    "supertest": "^6.1.4",
+    "nodemon":"^2.0.12"
   }
 }

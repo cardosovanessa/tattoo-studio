@@ -15,6 +15,7 @@ class MaterialsDao {
     })
   }
 
+  /*
   getMaterialsByName(agulha) {
     return new promise ((resolve, reject) => {
       this.db.all('select * from materials where agulha = (?)', agulha, (err, rows) => {
@@ -26,22 +27,51 @@ class MaterialsDao {
         })
       })
     }
+  */
 
-  insertMaterials(agulha){
+  insertMaterials(materials){
     return new Promise((resolve, reject) => {
       this.db.run(`insert into materials (nome, marca, precoEntrada, quantidade)
       values (?, ?, ?, ?)`,         
-      Object.values(agulha),
-      (err) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(true);
+        Object.values(materials),
+        (err) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve();
+          }
         }
-      }
-    );
-  });
-}
+      )
+    })
+  }
+
+  deleteMaterials(id){
+    return new Promise((resolve, reject) => {
+      this.db.run(`delete from materials where id = ?`, id, err => {
+        if(err) {
+          reject(err);
+        }
+        else {
+          resolve();
+        }
+      })
+    })
+  }
+
+  updateMaterials(id, materials) {
+    return new Promise ((resolve, reject) => {
+      this.db.run(`update materials set (nome, marca, precoEntrada, quantidade)
+      values (?, ?, ?, ?) where id = (?)`, 
+      [materials[0], materials[1], materials[2], materials[3], id], (err) => {
+        if(err) {
+          reject(err);
+        }
+        else {
+          resolve();
+        } 
+      })
+    })
+  }
 }
 
 module.exports = MaterialsDao

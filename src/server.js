@@ -15,5 +15,3 @@ materialsRoute(app, db)
 app.listen(port, () => {
   console.log(`Servidor rodando: http://localhost:${port}`);
 });
-
-module.exports = app
