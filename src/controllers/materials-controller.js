@@ -16,19 +16,19 @@ module.exports = (app, db) => {
     }
   })
 
-  app.post('/materials/insert', (req, res) => {
-    const {nome, marca, precoEntrada, quantidade} = req.body;
-    let newMaterial = new Materials(nome, marca, precoEntrada, quantidade)
-    materialsDb.insertMaterials(newMaterial)
-    .then(rows => {
+  app.post('/materials/insert', async (req, res) => {
+    try { 
+      const {nome, marca, precoEntrada, quantidade} = req.body;
+      let newMaterial = new Materials(nome, marca, precoEntrada, quantidade)
+      let rows = await materialsDb.insertMaterials(newMaterial)
+       
       res.json({
         result: rows,
         count: rows.length
       })
-    })
-    .catch(err => {
-      res.json({err})
-    })
+    } catch (err) {
+      res.json({err});
+      }
   })
 
   app.delete('/materials/delete/:id', (req, res) => { 
@@ -50,10 +50,10 @@ module.exports = (app, db) => {
     const id = req.params.id;
     const body = req.body;
     const materials = [body.nome, body.marca, body.precoEntrada, body.quantidade]
-    materialsDb.updateMaterials(id, materials)
+    materialsDb.updateMaterials(materials, id)
     .then(() => { 
       res.json({ 
-        message: "Materials successfully deleted"}) 
+        message: "Materials successfully update"}) 
     }) 
     .catch((err) => { 
       res.json({ 
