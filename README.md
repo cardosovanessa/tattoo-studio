@@ -11,7 +11,7 @@
 
 <h1 align="center">Tattoo Studio - API Rest</h1>
 
-### 🪄  Sobre
+### Sobre
 ---
 Criação de API que retorna informações sobre os `materiais` de um estúdio de tatuagem, utilizando os verbos HTTP seguindo o padrão REST e contendo todas as operações de CRUD.
 ### 🚀 Pré-requisitos
@@ -55,7 +55,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 *Banco de dados*
 - [SQLite3](https://www.npmjs.com/package/sqlite3)
 
-### ☑️ Demonstração da aplicação
+### Demonstração da aplicação
 ---
 <h1 align="center">
 
@@ -69,7 +69,7 @@ O arquivo de testes foi implementado ao projeto para conferir o funcionamento da
   $ npm run test # iniciando testes
 ```
 
-### 🔖 Autor
+### Autor
 ---
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/cardosofvanessa/)](https://www.linkedin.com/in/cardosofvanessa/) 
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-red?style=flat-square&logo=Gmail&logoColor=white&link=mailto:cardosovanessafs@gmail.com)](mailto:cardosovanessafs@gmail.com) 
