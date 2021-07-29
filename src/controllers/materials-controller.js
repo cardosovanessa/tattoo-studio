@@ -34,21 +34,6 @@ module.exports = (app, db) => {
   }
 })
 
-  // app.delete('/materials/delete/:id', async(req, res) => { 
-  //   const id = req.params.id 
-  //   materialsDb.deleteMaterials(id) 
-  //   .then(() => { 
-  //     res.json({ 
-  //       message: "successfully deleted materials"}) 
-  //   }) 
-  //     .catch((err) => { 
-  //       res.json({ 
-  //       message: "Error deleting materials", 
-  //       error:err 
-  //     }) 
-  //   }) 
-  // }) 
-
   app.delete('/materials/delete/:id', async (req, res) => {
     const { id } = req.params;
     try {
@@ -64,23 +49,6 @@ module.exports = (app, db) => {
       });
     }
   });
-
-//   app.put('/materials/update/:id', (req, res) => {
-//     const id = req.params.id;
-//     const body = req.body;
-//     const materials = [body.nome, body.marca, body.precoEntrada, body.quantidade]
-//     materialsDb.updateMaterials(materials, id)
-//     .then(() => { 
-//       res.json({ 
-//         message: "Materials successfully update"}) 
-//     }) 
-//     .catch((err) => { 
-//       res.json({ 
-//         message: "Error deleting materials", 
-//         error:err }) 
-//     }) 
-//   })
-// }
 
   app.put('/materials/update/:id', async (req, res) => {
     const {nome, marca, precoEntrada, quantidade} = req.body;

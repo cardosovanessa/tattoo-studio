@@ -38,21 +38,6 @@ class MaterialsDao {
   })
 }
 
- /* updateMaterials(materials, id) {
-    return new Promise ((resolve, reject) => {
-      this.db.run(`update materials set nome=?, marca=?, precoEntrada=?, quantidade=? where id = (?)`, 
-      [materials[0], materials[1], materials[2], materials[3], id], (err) => {
-        if(err) {
-          reject(err);
-        }
-        else {
-          resolve();
-        } 
-      })
-    })
-  }
-} */
-
   putMaterials(id, nome, marca, precoEntrada, quantidade) {
     if (nome || marca || precoEntrada || quantidade) {
       

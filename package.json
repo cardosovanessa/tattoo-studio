@@ -2,7 +2,7 @@
   "name": "tattoostudio",
   "version": "1.0.0",
   "description": "Estudio de tatuagem",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "start": "node ./src/server.js",
@@ -26,8 +26,8 @@
   },
   "devDependencies": {
     "jest": "^27.0.6",
-    "supertest": "^6.1.4",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.4"
   },
   "engines": {
     "node": "14.16"
