@@ -17,7 +17,6 @@ module.exports = (app, db) => {
   });
 
   app.post('/materials', async (req, res) => {
-   
       const {nome, marca, precoEntrada, quantidade} = req.body;
       let newMaterial = new Materials(nome, marca, precoEntrada, quantidade)
       try { 
