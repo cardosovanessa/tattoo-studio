@@ -34,12 +34,12 @@ module.exports = (app, db) => {
   }
 })
 
-  app.delete('/materials/delete/:id', async (req, res) => {
+  app.delete('/materials/:id', async (req, res) => {
     const { id } = req.params;
     try {
       await materialsDb.deleteMaterials(id);
       res.status(200).json({
-        message: "Successfully deleted materials",
+        message: `Materials with id ${id} deleted successfully.`,
       });
     } catch (err) {
       res.status(500).json({
@@ -50,13 +50,13 @@ module.exports = (app, db) => {
     }
   });
 
-  app.put('/materials/update/:id', async (req, res) => {
+  app.put('/materials/:id', async (req, res) => {
     const {nome, marca, precoEntrada, quantidade} = req.body;
     const { id } = req.params;
     try {
       await materialsDb.putMaterials(id, nome, marca, precoEntrada, quantidade);
       res.status(200).json({
-        message: "Materials successfully update.",
+        message: `Materials with id ${id} successfully update.`,
         error: false,
       });
     } catch (err) {
