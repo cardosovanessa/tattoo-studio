@@ -71,7 +71,7 @@ O protocolo HTTP implementa diferentes verbos. A ideia por trás de uma API ou a
 
 cada operação CRUD utilizará um verbo http diferente:
 
-Em uma API Rest o verbo `post` é utilizado para inserir recursos/registros no banco. A operação CRUD equivalente é a de `create`.
+O verbo `post` é utilizado para inserir recursos/registros no banco. A operação CRUD equivalente é a de `create`.
 
 O verbo `get` é utilizado para retornar os recursos. A operação CRUD equivalente é a de `read`.
 
