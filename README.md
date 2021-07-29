@@ -82,8 +82,8 @@ O verbo "delete" é utilizado para receber um parâmetro para deleção. A opera
 ```
 
 ### Retornando os materiais: *get: url/materials*
-![post]()
 
+![get](https://user-images.githubusercontent.com/61803211/127529856-3a835ef1-89ec-481b-97d4-2e38ed1e056a.png)
 
 
 ### Testes Unitários
