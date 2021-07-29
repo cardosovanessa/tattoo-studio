@@ -70,22 +70,30 @@ As seguintes ferramentas foram usadas na construção do projeto:
 O protocolo HTTP implementa diferentes verbos. A ideia por trás de uma API ou aplicação Rest é que **cada um dos diferentes verbos seja utilizado para uma operação específica.**
 
 ex: *cada operação CRUD utilizará um verbo http diferente*
-```sh
 
-Em uma API Rest o verbo "post" é utilizado para inserir recursos/registros no banco de dados da aplicação. A operação CRUD equivalente é a de "create".
+Em uma API Rest o verbo `post` é utilizado para inserir recursos/registros no banco de dados da aplicação. A operação CRUD equivalente é a de `create`.
 
-O verbo "get" é utilizado para retornar os recursos. A operação CRUD equivalente é a de "read".
+O verbo `get` é utilizado para retornar os recursos. A operação CRUD equivalente é a de `read`.
 
-O verbo "put" é utilizado para atualizar recursos/registros específicos no banco de dados da aplicação. A operação CRUD equivalente é a de "update".
+O verbo `put` é utilizado para atualizar recursos/registros específicos no banco de dados da aplicação. A operação CRUD equivalente é a de `update`.
 
-O verbo "delete" é utilizado para receber um parâmetro para deleção. A operação CRUD equivalente é a de "delete".
-```
+O verbo `delete` é utilizado para receber um parâmetro para deleção. A operação CRUD equivalente é a de `delete`.
 
-### Retornando os materiais: *get: url/materials*
+
+**Retornando os materiais:** *get: url/materials*
 
 ![get](https://user-images.githubusercontent.com/61803211/127529856-3a835ef1-89ec-481b-97d4-2e38ed1e056a.png)
 
+**Inserindo novo material:** *post: url/materials*
+![post](https://user-images.githubusercontent.com/61803211/127530356-f0adede6-932f-4ce1-a99f-c07245ed6288.png)
 
+**Atualizando os materiais pelo id:** *put: url/materials/id*
+![put](https://user-images.githubusercontent.com/61803211/127530437-cc2eac23-f5f4-441a-8355-5c6e92b537ed.png)
+
+**Deletando algum material pelo id:** *post: url/materials/id*
+![delete](https://user-images.githubusercontent.com/61803211/127530581-ef881bba-d83d-4f18-b557-00bd8b1e6418.png)
+
+---
 ### Testes Unitários
 
 O arquivo de testes foi implementado ao projeto para conferir o funcionamento das rotas através da biblioteca [Supertest](https://www.npmjs.com/package/supertest) com o Framework [Jest](https://jestjs.io/).
